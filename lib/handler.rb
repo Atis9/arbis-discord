@@ -5,7 +5,7 @@ module Arbis
       @@handlers << block
     end
 
-    def self.activate(client)
+    def self.register(client)
       @@handlers.each do |handler|
         handler.call(client)
       end

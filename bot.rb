@@ -14,7 +14,7 @@ module Arbis
 
     def run
       client = Discordrb::Bot.new(token: @token)
-      Arbis::Handler.activate(client)
+      Arbis::Handler.register(client)
       client.run
     end
   end
