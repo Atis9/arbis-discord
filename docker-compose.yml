@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  arbis:
+    build:
+      context: .
+      args:
+      - WORKDIR=app
+    image: arbis:latest
+    restart: always
+    env_file:
+      - .env
