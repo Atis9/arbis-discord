@@ -1,12 +1,12 @@
 version: "3"
 
 services:
-  arbis:
+  arbis-discord:
     build:
       context: .
       args:
       - WORKDIR=app
-    image: arbis:latest
+    image: arbis-discord
     restart: always
     env_file:
       - .env
