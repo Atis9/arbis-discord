@@ -21,7 +21,7 @@ module Arbis::Action
     end
 
     def parse(message)
-      message.gsub(/^.*\s+roll\s+/, "").gsub(/#.*/, "").gsub(/\/\/.*/).gsub(/\s/, "")
+      message.gsub(/^.*\s+roll\s+/, "").gsub(/#.*/, "").gsub(/\/\/.*/, "").gsub(/\s/, "")
     end
   end
 end
