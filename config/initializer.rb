@@ -6,6 +6,7 @@ module Arbis
       require 'logger'
       require 'active_support/all'
       require 'discordrb'
+      require 'games_dice'
     end
 
     def self.load_lib

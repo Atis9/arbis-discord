@@ -3,3 +3,4 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'discordrb', '~> 3.4'
 gem 'activesupport', '~> 6.1', '>= 6.1.3.1'
+gem 'games_dice', '0.3.12'
