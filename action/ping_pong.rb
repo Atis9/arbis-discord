@@ -6,7 +6,6 @@ module Arbis::Action
 
     def execute
       begin
-        pp @event.content
         response = @event.send_message('pong', false, nil, nil, nil, @event.message)
         response.edit "#{response.content}\nTime taken: #{response.timestamp - @event.timestamp} seconds."
       rescue => e
